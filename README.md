@@ -1,2 +1,2 @@
-# resumegabby.github.io
-Resumen Real Estate Gabby.
+# resumegabby.github.io 
+Resume Gabby
