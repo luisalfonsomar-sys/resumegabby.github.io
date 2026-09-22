@@ -1,0 +1,384 @@
+/* *General* */
+body {
+      font-family: 'Playfair Display', serif;
+      font-family: 'Fauna One', serif;
+      background-color: #ecece7;
+      background-image: url(../image/body.svg);
+      background-size: cover;
+
+}
+
+html {
+      scroll-behavior: smooth;
+}
+
+
+h1,
+h4,
+h5 {
+      font-family: 'Fauna One', serif;
+      font-weight: 400;
+}
+
+h2,
+h3 {
+      font-size: 25px;
+      font-weight: bolder;
+}
+
+p {
+      font-family: 'Playfair Display', serif;
+      font-weight: 100;
+
+}
+
+ul {
+      font-family: 'Playfair Display', serif;
+      font-weight: 100;
+}
+
+
+.hero .first {
+      font-size: 80px;
+      color: #eacac1;
+
+}
+
+.hero .second {
+      font-size: 60px;
+      font-weight: 100;
+      color: #eacac1;
+
+}
+
+
+
+/*backgrounds*/
+
+.hero .first {
+      font-size: 35px;
+
+
+}
+
+.hero .second {
+      font-size: 25px;
+      font-weight: 600;
+}
+
+.hero h1 {
+
+      font-size: 20px;
+      line-height: 0vw;
+}
+
+.hero h2 {
+
+      font-size: 20px;
+      justify-content: center;
+      line-height: 4vw;
+}
+
+.hero p {
+      line-height: 0vw;
+      margin-top: 2vw;
+      font-size: 3vw;
+      color: cadetblue;
+}
+
+.aboutme {
+
+      background-size: cover;
+      padding: 5%;
+
+}
+
+
+
+
+.aboutme h1 {
+      font-weight: 700;
+      font-size: 18px;
+      color: #13232d;
+      text-align: left;
+      justify-content: left;
+      text-transform: initial;
+}
+
+
+
+
+.aboutme h2 {
+      color: #13232d;
+      font-size: 40px;
+      line-height: 35px;
+
+}
+
+.aboutme h3 {
+      font-weight: 200;
+      color: #13232d;
+      text-decoration: underline;
+
+}
+
+.aboutme p {
+      font-weight: 200;
+      color: #695a4e;
+      text-align: left;
+
+}
+
+.aboutme td {
+      font-weight: 100;
+      color: #655841;
+      font-size: smaller;
+
+}
+
+
+.experience {
+      background-color: #13232d;
+      width: 100%;
+
+
+}
+
+
+.experience h1 {
+      font-weight: 700;
+      font-size: 18px;
+      color: #ecece7;
+      text-align: left;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      padding-top: 5%;
+}
+
+.experience h2 {
+      font-weight: 500;
+
+      color: #ecece7;
+      text-align: center;
+
+
+
+}
+
+.experience h3 {
+      font-weight: 100;
+      font-size: medium;
+      color: #ecece7;
+      text-align: center;
+
+
+}
+
+.experience h4 {
+      font-size: 1vw;
+      font-weight: 400;
+      color: #ecece7;
+      text-align: center;
+
+
+}
+
+.experience p {
+      font-weight: 200;
+      color: #ecece7;
+      text-align: left;
+
+
+}
+
+.experience ul {
+      font-weight: 200;
+      color: #ecece7;
+      text-align: center;
+
+
+}
+
+
+
+.education {
+      background-image: url(../image/HOUSE.png);
+      filter: saturate(0);
+      background-size: cover;
+      background-position: middle;
+      opacity: 0.3;
+
+}
+
+
+.education h1 {
+      font-weight: 700;
+      font-size: 18px;
+      color: #13232d;
+      text-align: left;
+      width: 100%;
+      height: 200px;
+      padding: 0;
+      margin: 0;
+      padding-bottom: 5%;
+      padding-top: 5%;
+}
+
+.education h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #13232d;
+      text-align: left;
+}
+
+.education li {
+      font-size: 16px;
+      font-weight: 200;
+      color: #13232d;
+      text-align: left;
+}
+
+.education p {
+      font-size: 16px;
+      font-weight: 200;
+      color: #13232d;
+      text-align: left;
+}
+
+.education figcaption {
+      font-size: 16px;
+      font-weight: 200;
+      color: #13232d;
+      text-align: left;
+}
+
+.contact h1 {
+      font-weight: 700;
+      font-size: 40px;
+      color: #13232d;
+      text-align: center;
+      width: 100%;
+      height: 200px;
+      padding: 0;
+      margin: 0;
+      padding-bottom: 5%;
+      padding-top: 5%;
+}
+
+.contact h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #13232d;
+      text-align: left;
+}
+
+
+.contact h5 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #13232d;
+      text-align: left;
+}
+
+.contact li {
+      font-size: 16px;
+      font-weight: 200;
+      color: #13232d;
+      text-align: left;
+}
+
+.contact p {
+      font-size: 16px;
+      font-weight: 200;
+      color: #13232d;
+      text-align: left;
+}
+
+.footer a {
+
+      color: antiquewhite
+}
+
+.footer a:hover {
+
+      color: aquamarine;
+}
+
+
+/*special*/
+
+.accordion {
+      /*Shadow accordion*/
+      border: #ecece7;
+      margin: 20px;
+
+
+}
+
+.accordiontop {
+      background-color: #ecece7;
+}
+
+.accordiontop:hover {
+      background-color: #ecece7;
+}
+
+
+
+
+.resumeBtn {
+      letter-spacing: 1px;
+      font-size: 12px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: lighter;
+}
+
+.whitetextContainer {
+      color: #ecece7;
+      font-size: 10px;
+
+}
+
+
+.buttonwhitehome {
+      -webkit-box-shadow: 0 0 5px #b18a79;
+      box-shadow: 0 0 2px #caab9c;
+      border-radius: 14px;
+      width: 36vw;
+      height: 36vw;
+      margin: 14px;
+      opacity: 0.8;
+}
+
+.textlowbutton {
+      font-size: 1em;
+      font-family: montserrat;
+}
+
+.textbig {
+
+      font-family: montserrat;
+
+}
+
+
+.buttonexperiencewhite {
+      background-color: #ecece7;
+      border-radius: 0 0 37px 37px;
+      border-radius: 20px;
+      height: 160px;
+      width: 250px;
+      -webkit-box-shadow:
+            8px 8px 4px #bb9484;
+      -moz-box-shadow:
+            8px 8px 4px #bb9484;
+      -o-box-shadow:
+            8px 4px 8px #bb9484;
+      inset: 10px 8px #bca49a;
+      box-shadow:
+            8px 5px 5px #bb9484;
+      inset: 10px 8px #bca49a;
+      opacity: 0.8;
+
+}

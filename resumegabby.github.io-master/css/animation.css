@@ -1,0 +1,259 @@
+.focusanimation:active {
+      transform: translate(0px, 5px);
+      -webkit-transform: translate(0px, 5px);
+      box-shadow: 0px 1px 0px 0px;
+      border-radius: 20px;
+}
+
+
+.animationbutton {
+
+      background-color: #e1cfb3;
+      box-shadow: 3px 5px 5px #ffffff;
+      border-radius: 20px;
+      transition: all 1s ease;
+      transform: scale(0.9);
+}
+
+.animationbutton:hover {
+      background-color: #e7ded0;
+      /*  Making button bigger on hover  */
+      transform: scale(0.9) perspective(1px)
+}
+
+
+.animationbuttonHome {
+
+      background-color: #e2d8c8;
+      box-shadow: 3px 5px 5px #ffffff;
+      border-radius: 20px;
+      transition: all 1s ease;
+      transform: scale(0.9);
+}
+
+
+.animationbuttonHome:hover {
+      background-color: #e2d8c8;
+      /*  Making button bigger on hover  */
+      transform: scale(1.0) perspective(1px)
+}
+
+
+
+
+* {
+      margin: 0;
+      padding: 0;
+}
+
+html,
+body {
+      height: 100%;
+}
+
+
+.hero {
+      height: 100vh;
+      text-align: left;
+      background-attachment: fixed;
+      background-image: url(../image/heromob.svg);
+      background-size: cover;
+
+}
+
+.hero-text {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 60px;
+      letter-spacing: 2px;
+}
+
+
+.containerhero {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+}
+
+
+.animation {
+      letter-spacing: 2px;
+      display: inline-block;
+      animation: fadeIn 1.5s forwards;
+      opacity: 0;
+      transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      padding-top: 16%;
+      margin-left: 10vw;
+
+}
+
+.first {
+      animation: firstSpan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      z-index: 1;
+      font-size: 70px;
+      display: inline-block;
+      color: #385e67;
+
+}
+
+.oh {
+      overflow: visible;
+
+}
+
+.second {
+
+      animation: secondSpan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      font-weight: 800;
+      z-index: -1;
+      display: inline-block;
+      color: #5c93a0;
+      margin-bottom: 1.5vw;
+
+
+}
+
+.third {
+      animation: secondSpan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      z-index: -1;
+      color: #13232d;
+      font-size: 3vw;
+
+}
+
+@keyframes fadeIn {
+      0% {
+            opacity: 0;
+            transform: scale(1);
+      }
+
+      50% {
+            opacity: 1;
+            transform: scale(1.1);
+      }
+
+      100% {
+            transform: scale(1);
+            opacity: 1;
+      }
+}
+
+@keyframes firstSpan {
+      0% {
+            transform: translateX(50%);
+      }
+
+      60% {
+            transform: translateX(50%);
+      }
+
+      100% {
+            transform: translateX(0%);
+      }
+}
+
+@keyframes secondSpan {
+      0% {
+            transform: translateX(-100%);
+      }
+
+      60% {
+            transform: translateX(-100%);
+      }
+
+      100% {
+            transform: translateX(-0%);
+      }
+}
+
+/*LOADER*/
+
+
+
+#preload {
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #13232d;
+      transition: opacity linear 1s;
+      z-index: 1;
+
+
+      position: fixed;
+      top: 0;
+      z-index: 10000;
+
+}
+
+#preload:before {
+      content: url(../image/preloader_animated.svg);
+      position: absolute;
+      top: calc(50% - 30px);
+      left: calc(50% - 30px);
+      width: 60px;
+      height: 60px;
+
+}
+
+#preload.out {
+      opacity: 0;
+}
+
+@keyframes spin {
+      0% {
+            -webkit-transform: rotate(0deg);
+      }
+
+      100% {
+            -webkit-transform: rotate(360deg);
+      }
+}
+
+
+
+.typewriter h1 {
+      color: #fff;
+      font-family: monospace;
+      overflow: hidden;
+      /* Ensures the content is not revealed until the animation */
+      border-right: .15em solid orange;
+      /* The typwriter cursor */
+      white-space: nowrap;
+      /* Keeps the content on a single line */
+      margin: 0 auto;
+      /* Gives that scrolling effect as the typing happens */
+      letter-spacing: .15em;
+      /* Adjust as needed */
+      animation:
+            typing 3.5s steps(30, end),
+            blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+      from {
+            width: 0
+      }
+
+      to {
+            width: 100%
+      }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+      from,
+      to {
+            border-color: transparent
+      }
+
+      50% {
+            border-color: orange
+      }
+}

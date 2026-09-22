@@ -1,0 +1,78 @@
+.typewriter {
+      overflow: hidden;
+      /* Ensures the content is not revealed until the animation */
+      border-right: .15em solid rgb(140, 140, 140);
+      /* The typwriter cursor */
+      white-space: nowrap;
+      /* Keeps the content on a single line */
+      /* Gives that scrolling effect as the typing happens */
+      letter-spacing: 0em;
+      /* Adjust as needed */
+      animation:
+            typing 0.2s steps(40, end),
+            blink-caret 0.75s step-end infinite;
+}
+
+.typewriter2 {
+      overflow: hidden;
+      /* Ensures the content is not revealed until the animation */
+      border-right: .15em solid rgb(87, 64, 5);
+      /* The typwriter cursor */
+      white-space: nowrap;
+      /* Keeps the content on a single line */
+      /* Gives that scrolling effect as the typing happens */
+      letter-spacing: 0em;
+      /* Adjust as needed */
+      animation:
+            typing 0.5s steps(40, end),
+            blink-caret 0.75s step-end infinite;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+      from {
+            width: 0
+      }
+
+      to {
+            width: 80%
+      }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+      from,
+      to {
+            border-color: transparent
+      }
+
+      0% {
+            border-color: rgb(222, 203, 169);
+      }
+}
+
+
+.focusanimation:active {
+      transform: translate(0px, 5px);
+      -webkit-transform: translate(0px, 5px);
+      box-shadow: 0px 1px 0px 0px;
+      border-radius: 20px;
+}
+
+
+.animationbutton {
+
+      background-color: #ffffff;
+      box-shadow: 3px 5px 5px #ffffff;
+      border-radius: 20px;
+      transition: all 1s ease;
+      transform: scale(1);
+}
+
+.animationbutton:hover {
+      background-color: #ffffff;
+      /*  Making button bigger on hover  */
+      transform: scale(1.2) perspective(1px)
+}

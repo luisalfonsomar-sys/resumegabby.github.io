@@ -1,0 +1,133 @@
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+      body {}
+
+      .hero {
+            background-image: url(../image/HOUSE.png);
+            background-size: cover;
+            background-color: #13232d;
+      }
+
+
+      #buttonsmobile {
+            visibility: visible;
+
+      }
+
+      h1 {
+            font-size: 60px;
+      }
+
+      .footer {
+
+            position: fixed;
+            bottom: 0;
+            z-index: 10000;
+
+      }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+      .hero {
+
+            background-image: url(../image/HOUSE.png);
+            background-size: cover;
+            background-color: #13232d;
+      }
+
+      .footer {
+
+            position: fixed;
+            bottom: 0;
+            z-index: 0;
+
+      }
+
+      .hero .first {
+            font-size: 60px;
+
+      }
+
+      .hero .second {
+
+            font-size: 70px;
+            font-weight: 600;
+      }
+
+
+      #buttonsmobile {
+            visibility: visible;
+
+      }
+
+
+      .buttonexperiencewhite {
+
+            height: 300px;
+            width: 300px;
+      }
+
+
+}
+
+@media (min-width: 1024px) {
+
+      .hero {
+
+            background-image: url(../image/heroescritorio.svg);
+            background-size: cover;
+            background-position: center;
+      }
+
+      .buttonexperiencewhite {
+
+            height: 42vw;
+            width: 42vw;
+      }
+
+      .buttonexperiencewhite .textlowbutton {
+            font-size: 20px;
+      }
+
+
+      .buttonexperiencewhite .textbig {
+            font-size: 10vw;
+      }
+
+      .buttonexperiencewhite {
+
+            height: 200px;
+            width: 200px;
+      }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+      .righthero {
+            background-image: url(../image/HOUSE.png);
+            background-size: cover;
+      }
+
+      .hero .first {
+            font-size: 100px;
+            font-weight: 100;
+            color: #eacac1;
+
+      }
+
+      .hero .second {
+            font-size: 60px;
+            line-height: 20px;
+            color: #eacac1;
+      }
+
+      #buttonsmobile {
+            visibility: hidden;
+
+      }
+
+
+}
