@@ -71,6 +71,33 @@
 		});
 	}
 
+	// Tools marquee: repeat the logo set until it covers the screen, then shift by exactly
+	// one set per cycle so the loop never shows a gap, at a constant speed on any width
+	var track = document.querySelector(".marquee__track");
+	if (track) {
+		var source = track.querySelector(".marquee__group");
+		var fillMarquee = function () {
+			var setWidth = source.getBoundingClientRect().width;
+			if (!setWidth) return;
+			var needed = Math.ceil(window.innerWidth / setWidth) + 1;
+			var groups = track.querySelectorAll(".marquee__group");
+			for (var n = groups.length; n < needed; n++) {
+				var copy = source.cloneNode(true);
+				copy.setAttribute("aria-hidden", "true");
+				track.appendChild(copy);
+			}
+			track.style.setProperty("--marquee-shift", setWidth + "px");
+			track.style.setProperty("--marquee-time", (setWidth / 40).toFixed(1) + "s");
+		};
+		fillMarquee();
+		var resizeTimer;
+		window.addEventListener("resize", function () {
+			clearTimeout(resizeTimer);
+			resizeTimer = setTimeout(fillMarquee, 150);
+		});
+		if (document.fonts && document.fonts.ready) document.fonts.ready.then(fillMarquee);
+	}
+
 	// Experience accordion: keep one role open at a time
 	var roles = document.querySelectorAll(".role details");
 	roles.forEach(function (d) {
